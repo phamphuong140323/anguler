@@ -1,0 +1,13 @@
+<p>product-list works!</p>
+<table>
+    <tr>
+        <td>#</td>
+        <td>Name</td>
+        <td>IMG</td>
+        <td>Price</td>
+        <td></td>
+    </tr>
+    <tr app-product-item *ngFor="let product of products; let i = index " [product]="product" [index]="i" (onRemove)="removeItem(product.id)">
+
+    </tr>
+</table>
